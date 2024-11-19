@@ -28,9 +28,9 @@ namespace DataPassing.Controllers
 
         public ActionResult Index()
         {
-            if(Request.HttpMethod == "get")
+            if (Request.HttpMethod=="GET")
             {
-                return View();
+                return View("index");
             }
             return Content(Request["name"]);
             //return View();
